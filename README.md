@@ -10,7 +10,7 @@ No build tools, no frameworks — runs directly in the browser via a simple loca
 
 ### Option 1 — VS Code Live Server Extension (Recommended, Easiest)
 
-1. Open the `sap-fiori-alm` folder in VS Code
+1. Open the `sap-btp-alm` folder in VS Code
 2. Install the **Live Server** extension by Ritwick Dey (if not already installed)
    - Press `Ctrl+Shift+X` → search "Live Server" → Install
 3. Right-click `index.html` → **"Open with Live Server"**
@@ -25,7 +25,7 @@ Requires Node.js installed: https://nodejs.org
 ```bash
 # 1. Open terminal in VS Code (Ctrl + `)
 # 2. Navigate to the project folder
-cd sap-fiori-alm
+cd sap-btp-alm
 
 # 3. Install dependencies
 npm install
