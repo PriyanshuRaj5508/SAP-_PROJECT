@@ -1,0 +1,17 @@
+{
+  "name": "sap-fiori-alm",
+  "version": "1.0.0",
+  "description": "SAP S/4HANA Cloud – Asset Lifecycle Management (ALM) Fiori Simulation",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html --watch=.",
+    "dev": "npx live-server --port=3000 --open=index.html",
+    "serve": "npx http-server . -p 3000 -o"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["SAP", "Fiori", "ALM", "S4HANA"],
+  "author": "Ajitabh Martand",
+  "license": "MIT"
+}

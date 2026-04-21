@@ -1,0 +1,77 @@
+/* ─── COMPONENTS CSS ──────────────────────────────────────────────────────── */
+
+/* Cost bar chart */
+.cost-bar-row { margin-bottom: 14px; }
+.cost-bar-label { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; }
+.cost-bar-label .eq-name { color: var(--sap-blue); cursor: pointer; font-weight: 500; max-width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cost-bar-label .eq-cost { font-weight: 600; }
+
+/* Operations table inside order detail */
+.ops-table { font-size: 12px; }
+.ops-table th { font-size: 11px; }
+
+/* KPI mini inside panels */
+.kpi-mini-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.kpi-mini {
+  padding: 10px 12px; border: 1px solid var(--sap-border);
+  border-radius: var(--radius); background: #fff;
+  border-top: 3px solid var(--sap-blue);
+}
+.kpi-mini.err { border-top-color: var(--sap-err); }
+.kpi-mini.ok  { border-top-color: var(--sap-ok); }
+.kpi-mini.warn { border-top-color: var(--sap-warn); }
+.kpi-mini-val { font-size: 18px; font-weight: 300; }
+.kpi-mini-lbl { font-size: 10px; color: var(--sap-text-md); text-transform: uppercase; letter-spacing: .4px; }
+
+/* Legend dots */
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; }
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--sap-text-md); }
+.legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+
+/* Empty state */
+.empty-state { text-align: center; padding: 40px 20px; color: var(--sap-text-md); }
+.empty-state-icon { font-size: 40px; margin-bottom: 12px; opacity: .4; }
+.empty-state-text { font-size: 14px; }
+
+/* Table action button */
+.tbl-action { 
+  display: inline-flex; align-items: center; gap: 4px; 
+  color: var(--sap-blue); font-size: 12px; cursor: pointer; 
+  padding: 2px 6px; border-radius: var(--radius);
+  transition: var(--transition);
+}
+.tbl-action:hover { background: var(--sap-blue-lt); }
+
+/* Avail indicator inline */
+.avail-inline { display: flex; align-items: center; gap: 6px; }
+.avail-inline .progress-bar { width: 64px; flex-shrink: 0; }
+.avail-inline span { font-size: 12px; }
+
+/* Report recommendation chip */
+.rec-chip {
+  display: inline-block; padding: 2px 8px; border-radius: 20px;
+  font-size: 11px;
+}
+.rec-green { background: var(--sap-ok-lt); color: var(--sap-ok); }
+.rec-amber { background: var(--sap-warn-bg); color: var(--sap-warn); }
+.rec-red   { background: var(--sap-err-bg); color: var(--sap-err); }
+
+/* Detail header actions */
+.detail-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+
+/* Inspection calendar */
+.cal-legend { display: flex; gap: 14px; margin-top: 10px; font-size: 11px; color: var(--sap-text-md); }
+.cal-legend-item { display: flex; align-items: center; gap: 5px; }
+.cal-legend-dot { width: 12px; height: 12px; border-radius: 2px; }
+
+/* Summary stat box */
+.summary-box {
+  background: var(--sap-blue-lt); border: 1px solid var(--sap-border-md);
+  border-radius: var(--radius); padding: 14px 16px; margin-top: 12px;
+  font-size: 13px; color: #0057B8;
+}
+
+/* Scrollable table container (fixed height) */
+.table-scroll { max-height: 420px; overflow-y: auto; }
+.table-scroll::-webkit-scrollbar { width: 6px; }
+.table-scroll::-webkit-scrollbar-thumb { background: var(--sap-border); border-radius: 3px; }

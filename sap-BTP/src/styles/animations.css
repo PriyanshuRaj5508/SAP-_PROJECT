@@ -1,0 +1,91 @@
+/* ─── ANIMATIONS ──────────────────────────────────────────────────────────── */
+
+/* Page fade-in */
+.page-enter {
+  animation: pageIn 0.22s ease forwards;
+}
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* KPI count-up shimmer */
+.kpi-val { transition: all 0.3s ease; }
+
+/* Table row stagger */
+.table-stagger tr {
+  animation: rowIn 0.2s ease backwards;
+}
+.table-stagger tr:nth-child(1)  { animation-delay: 0.02s; }
+.table-stagger tr:nth-child(2)  { animation-delay: 0.04s; }
+.table-stagger tr:nth-child(3)  { animation-delay: 0.06s; }
+.table-stagger tr:nth-child(4)  { animation-delay: 0.08s; }
+.table-stagger tr:nth-child(5)  { animation-delay: 0.10s; }
+.table-stagger tr:nth-child(6)  { animation-delay: 0.12s; }
+@keyframes rowIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Tile stagger */
+.launchpad .tile {
+  animation: tileIn 0.25s ease backwards;
+}
+.launchpad .tile:nth-child(1) { animation-delay: 0.04s; }
+.launchpad .tile:nth-child(2) { animation-delay: 0.08s; }
+.launchpad .tile:nth-child(3) { animation-delay: 0.12s; }
+.launchpad .tile:nth-child(4) { animation-delay: 0.16s; }
+@keyframes tileIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* KPI row stagger */
+.kpi-row .kpi {
+  animation: kpiIn 0.24s ease backwards;
+}
+.kpi-row .kpi:nth-child(1) { animation-delay: 0.02s; }
+.kpi-row .kpi:nth-child(2) { animation-delay: 0.06s; }
+.kpi-row .kpi:nth-child(3) { animation-delay: 0.10s; }
+.kpi-row .kpi:nth-child(4) { animation-delay: 0.14s; }
+@keyframes kpiIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Panel fade */
+.panel {
+  animation: panelIn 0.2s ease backwards;
+}
+@keyframes panelIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Progress bar animate on load */
+.progress-fill {
+  animation: fillIn 0.8s ease;
+}
+@keyframes fillIn {
+  from { width: 0 !important; }
+}
+
+/* Toast dismiss */
+.toast.dismissing {
+  animation: toastOut 0.2s ease forwards;
+}
+@keyframes toastOut {
+  to { opacity: 0; transform: translateX(30px); }
+}
+
+/* Shimmer loading state */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: var(--radius);
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
